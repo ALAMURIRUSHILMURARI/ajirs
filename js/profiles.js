@@ -45,6 +45,22 @@ const ProfileManager = {
       
       grid.appendChild(card);
     });
+
+    // Add Profile button at the end
+    const addCard = document.createElement('div');
+    addCard.className = 'profile-card add-profile-card';
+    addCard.innerHTML = `
+      <div class="profile-avatar-container add-profile-avatar-container">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+        </svg>
+      </div>
+      <span class="profile-name">Add Profile</span>
+    `;
+    addCard.addEventListener('click', () => {
+      alert('Profile creation is disabled in local demo mode.');
+    });
+    grid.appendChild(addCard);
   },
 
   /**
