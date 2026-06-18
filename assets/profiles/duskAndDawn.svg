@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgDuskDawn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fd7e14" />
+      <stop offset="50%" stop-color="#fcc419" />
+      <stop offset="100%" stop-color="#e64980" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+  <!-- Background Card -->
+  <rect width="100" height="100" rx="8" fill="url(#bgDuskDawn)" />
+  <rect width="100" height="100" rx="8" fill="url(#glow)" />
+  
+  <!-- Icon Graphics -->
+  <g filter="url(#shadow)" transform="translate(10, 10)">
+    <!-- Sun (Dawn) on Left -->
+    <path d="M 25 40 A 15 15 0 0 1 55 40 Z" fill="#ffffff" />
+    <!-- Rays -->
+    <line x1="40" y1="20" x2="40" y2="12" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <line x1="26" y1="26" x2="20" y2="20" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <line x1="54" y1="26" x2="60" y2="20" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <line x1="18" y1="40" x2="10" y2="40" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <line x1="62" y1="40" x2="70" y2="40" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Moon (Dusk) on Right -->
+    <path d="M 40 40 A 18 18 0 0 0 65 65 A 18 18 0 1 1 40 40 Z" fill="#1b1c3a" />
+    <!-- Sparkles -->
+    <circle cx="25" cy="58" r="1.5" fill="#ffffff" />
+    <circle cx="32" cy="68" r="1" fill="#ffffff" />
+    <circle cx="15" cy="65" r="2" fill="#ffffff" />
+  </g>
+  
+  <!-- Text Label -->
+  <text x="50" y="88" font-family="'Outfit', 'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="14" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">DUSK &amp; DAWN</text>
+</svg>
